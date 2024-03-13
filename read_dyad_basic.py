@@ -55,7 +55,6 @@ def combined_score(filename, weights):
             total_duration += duration
             score += weights[t_catagory - 1] * duration
         return score / total_duration
-        return score if np.abs(total_duration - 1.0) < 1.0e-5 else np.nan
 
 
 ################################################################################
